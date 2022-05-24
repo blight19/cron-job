@@ -1,0 +1,9 @@
+{
+  "api-port":8070,
+  "api-read-timeout":5,
+  "api-write-timeout": 5,
+  "etcdEndpoints": ["127.0.0.1:2379"],
+  "etcdDialTimeout": 5000,
+  "mongo-uri": "mongodb://root:123456@10.12.2.88:27017/?connect=direct",
+  "log-page-size": 10
+}

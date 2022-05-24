@@ -1,0 +1,14 @@
+syntax="proto3";
+//package ecommerce;
+option go_package = "dbsmonitor/b";
+service OrderManagement{
+  rpc getOrder(OrderId) returns (Order);
+}
+message OrderId{
+  string id=1;
+}
+message Order{
+  string id=1;
+  repeated string items=2;
+  float price=3;
+}
